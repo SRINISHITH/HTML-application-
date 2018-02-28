@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+<title>SRestro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image: url("res.gif");    
+    <!--background: lightblue;-->
+    color: #333;
+.bg 
+}
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>SRestro</h1>
+  <p>FROM FARM TO THE PAN</p>
+</div>
+
+<div class="navbar">
+	<a href="aboutus.html">About SRestro</a>
+	<a href="contact.html">Contact us</a>
+     	<a href="login.html">Login</a>
+	<a href="userregisteration.html"class="right">NewUser</a>
+	  
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>About ME</h2>
+       <img src="img10.jpg"  width="300" height="400px">
+
+      <p>I am srinishith owner of SRestro. Established in Aug-2017 in Chennai </p>
+      <h3>Feel like ur home</h3>
+      <p>Look like</p>
+       <img src="img8.jpg"  width="300" height="200px"><br><br>
+
+      <div  style="height:30px;">parking lot in srestro</div>
+          
+<img src="imf6.jpg"  width="300" height="200px"><br>
+            </div>
+  <div class="main">
+      <h2>SRestro</h2>
+     <section>
+         <img class="mySlides" src="i1.jpg"
+          style="width:75%">
+         <img class="mySlides" src="i2.jpg"
+         style="width:75%">
+         <img class="mySlides" src="i3.jpg"
+         style="width:75%">
+          </section>
+      <br>
+      <h2>SRestro</h2>
+      <h5>Establised, Aug 6, 2017</h5>
+<img src="logo.jpg"  width="500" height="200px">
+      
+<!--<div class="fakeimg" style="height:200px;">Image</div>-->
+      <p><h1><b>Breaf Description</h1><b></p>
+      <p><i>		Our restaurant's has professional cooks, where there being various finer distinctions. our restaurant also provide fast food and cafeterias. And staff to serve food, beverages and alcoholic drinks, including busboys who remove used dishes and cutlery. And also include a host or hostess, a maitre in hotel to welcome customers and to seat them, and a sommelier or wine waiter to help patrons select wines. A new route to becoming a restauranter, rather than working one's way up through the stages, is to operate a food truck. Once a sufficient following has been obtained, a permanent restaurant site can be opened. </i>
+
+</p>
+  </div>
+</div>
+
+<center><footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+  <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://about.me/sri_nishith" target="_blank">SRestro</a>
+ <center><footer>&copy; Copyright 2018 SRestro</footer>
+  
+</p>
+</footer>
+</center>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>

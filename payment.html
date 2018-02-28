@@ -1,0 +1,70 @@
+<html>
+    <head>
+    <title>Payment</title>
+    </head>
+<body {background-color: powderblue;}>
+
+<section>
+<h1><b><center>Payment Details</center></b></h1>
+
+<form id=payment>
+    <center><fieldset>
+<legend>User Details</legend>        
+<ol>
+                <label for=name>Name</label><br>
+                <input id=name name=name type=text placeholder="First and last name" required autofocus /><br>
+                <label for=email>Email</label><br>
+                <input id=email name=email type=email placeholder="example@domain.com" required /><br>
+                <label for=phone>Phone</label><br>
+                <input id=phone name=phone type=tel placeholder="Eg. +91 1234567890" required />           
+ </fieldset>
+       </ol>
+<fieldset> 
+       <legend>Delivery address</legend>
+        <ol>
+     
+                <label for=address>Address</label><br>
+                <textarea id=address name=address rows=5 required>
+                </textarea><br>
+            
+                <label for=postcode>Post Code</label><br>
+                <input id=postcode name=postcode type=text required /><br>
+            
+                <label for=country>Country</label><br>
+                <input id=country name=country type=text required />
+            
+        </ol>
+</fieldset>
+
+<fieldset> 
+       <legend>Card Details</legend>
+        <ol>
+
+                <legend>Card Type</legend>
+                <ol>
+
+                        <input id=visa name=cardtype type=radio />
+                        <label for=visa>VISA</label><br>
+                        <input id= creditcard name=cardtype type=radio />
+                        <label for=amex>CreditCard</label><br>
+                        <input id=mastercard name=cardtype type=radio />
+                        <label for=mastercard>Mastercard</label><br><br>
+                    
+                </ol>
+            
+                <label for=cardnumber>Card Number</label><br>
+                <input id=cardnumber name=cardnumber type=number required /><br>
+            
+                <label for=secure>CVV Code</label><br>
+                <input id=secure name=secure type=number required /><br>
+            
+                <label for=Card holder Name>Name on Card</label><br>
+                <input id=namecard name=namecard type=text placeholder="Exact name as on the card" required /><br>
+            </ol>
+        </fieldset>
+</form>
+<button type=submit>Buy Ur Order</button>
+</center>
+</section>
+</body>
+</html>
